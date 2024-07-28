@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css'; // Import your CSS file for styling
 
-const Header = () => {
+const Header = ({ isNavExpanded }) => {
   return (
-    <header className="header">
+    <header className={`header shadow-sm ${isNavExpanded ? 'header-expanded' : ''}`}>
       <div className="logo">
-        <h1></h1>
+      <img src="/attendance logo.png" alt="" className="img-logo" />
       </div>
       <nav className="nav">
         <ul>

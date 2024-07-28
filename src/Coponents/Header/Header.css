@@ -3,8 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background-color:  whitesmoke;
-  color: #fff;
+  background-color: white;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+     color: rgb(55, 54, 54);
 }
 
 .logo h1 {
@@ -23,11 +26,48 @@
 }
 
 .nav a {
-  color: #fff;
+     color: rgb(55, 54, 54);
   text-decoration: none;
   font-weight: bold;
 }
 
 .nav a:hover {
   text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 120px;
+  height: 65px;
+  /* margin-left: 80px; */
+
+  transition: padding-left 0.4s ease-in-out;
+}
+
+.header-expanded {
+  padding-left: 265px; /* Adjust this value based on the sidebar width */
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+    color: rgb(55, 54, 54);
+}
+
+
+.img-logo{
+  width: 30px;
+  height: 30px;
 }
